@@ -4,7 +4,7 @@
     "slug": "RU-card-manager",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -16,10 +16,15 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "NFC",
+        "android.permission.NFC"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.daniel_alves_farias.RUcardmanager"
     },
     "web": {
       "favicon": "./assets/favicon.png"
